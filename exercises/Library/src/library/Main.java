@@ -12,5 +12,11 @@ public class Main {
         lib.addBook(book1);
         lib.addBook(book2);
         lib.printAllBooks();
+
+        PrintedBook p = new PrintedBook("Dune", "Frank Herbert", 412, 0.8, true);
+        System.out.println(p); // otomatik toString çağrılır
+
+        p.ship(); // gönderim mesajı
+        System.out.println("Shipping cost: " + p.getShippingCost());
     }
 }
